@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7.5em;
+}
+
+header .top {
+    height: 3em;
+    margin-top: 1.5em;
+    padding: 0 15%;
+    width: 70%;
+    text-align: end;
+    line-height: 3em;
+}
+
+header .top-user {
+    height: 3em;
+    margin-top: 1.5em;
+    padding: 0 15%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .top-user a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+header .top-user img.img-avata {
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+header .top a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #161660;
+    font-weight: 600;
+}
+
+header .top a:first-child {
+    padding: 3px 10px;
+    border: 1px solid #12126c;
+    margin-right: 1.5em;
+}
+
+header nav {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    width: 70%;
+    background-color: #084590;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 1.5em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white
+}
+
+header img.img-logo {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.5em;
+}
+
+header a.logo {
+    display: flex;
+    align-items: center;
+}
+
+header a h2 {
+    color: gold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+header ul li.li {
+    font-weight: 700;
+}
+
+header a.logo {
+    text-decoration: none;
+}
+
+header.header-login {
+    height: 5.5em;
+    display: flex;
+    justify-content: flex-end;
+}

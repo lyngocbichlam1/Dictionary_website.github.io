@@ -1,0 +1,27 @@
+<header <%=name_page=='Login' ? 'class=header-login' :''%>>
+    <%if(!user){%>
+        <div class="top" id="header-top">
+            <a href="/login">Đăng nhập</a>
+            <a href="/login">Đăng ký</a>
+        </div>
+        <%} else if(name_page != 'Profile'){%>
+            <div class="top-user">
+                <a href="/profile">
+                    <img src="<%=user.photo%>" alt="" class="img-avata">
+                    <h5>
+                        <%=user.name%>
+                    </h5></a>
+            </div>
+            <%}%>
+                <nav>
+                    <a href="/" class="logo">
+                        <img src="/image/dictionary.png" alt="" class="img-logo">
+                        <h2>Dictionary</h2>
+                    </a>
+                    <ul>
+                        <li><a href="/dictionary">Từ điển</a></li>
+                        <li><a href="/history">Lịch sử</a></li>
+                        <li><a href="/word">Từ đã lưu</a></li>
+                    </ul>
+                </nav>
+</header>

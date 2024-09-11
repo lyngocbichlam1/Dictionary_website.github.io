@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 15.5em);
+    padding: 1em 15%;
+}
+
+main table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+td {
+    padding-left: 0.5em;
+}
+
+th {
+    padding: 5px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+tr td:last-child {
+    text-align: center;
+    width: 7em;
+}
+
+button {
+    margin: 10px 0;
+    padding: 2px 20px;
+    font-size: 14px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+tr td:nth-child(2) {
+    text-align: center;
+    width: 7em;
+}

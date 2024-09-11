@@ -1,0 +1,31 @@
+<%- include('./header.ejs') %>
+<main>
+    <div class="container">
+        <div class="form">
+            <label>Anh-Việt</label>
+            <div class="input-group">
+                <input id="input" type="text" placeholder="Nhập từ">
+                <img src="/icon/audio_play.png" alt="" id="icon-play">
+            </div>
+            <div class="button">
+                <button id="check">Tìm kiếm</button>
+                <button id="save-word">Lưu từ</button>
+            </div>
+            <div id="result"></div>
+        </div>
+        <div class="box">
+            <div class="form-save">
+                <img src="../icon/back.png" alt="" id="img-icon-back">
+                <h3>Lưu từ</h3>
+                <label>Tiếng anh</label>
+                <input type="text" id="word-ta">
+                <label>Từ loại</label>
+                <input type="text" id="word-tl">
+                <label>Nghĩa tiếng Việt</label>
+                <input type="text" id="word-tv">
+                <button id="save">Lưu</button>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include('./footer.ejs') %>

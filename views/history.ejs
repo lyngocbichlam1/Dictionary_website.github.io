@@ -1,0 +1,22 @@
+<%- include('./header.ejs') %>
+    <main>
+        <div class="container">
+            <p>Lịch sử tra cứu</p>
+            <div class="container-child">
+                <ul>
+                    <%for(var i=0;i<list.length;i++){%>
+                        <li onClick="showMean('<%=list[i].word%>')">
+                            <%=list[i].word%>
+                        </li>
+                        <%}%>
+                </ul>
+                <div id="box">
+                    <div class="row">
+                        <img src="/icon/close.png" alt="" class="img-icon" id="close">
+                        <div id="show"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./footer.ejs') %>

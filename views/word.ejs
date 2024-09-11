@@ -1,0 +1,27 @@
+<%- include('./header.ejs') %>
+<main>
+    <div class="container">
+        <%if(words.length == 0){%>
+            <h3>Không có từ</h3>
+        <%} else {%>
+            <table>
+                <tr>
+                    <th>Tiếng anh</th>
+                    <th>Từ loại</th>
+                    <th>Nghĩa</th>
+                    <th></th>
+                </tr>
+                <%for(var i=0;i<words.length;i++){%>
+                    <tr>
+                        <td><%=words[i].ta%></td>
+                        <td><%=words[i].tl%></td>
+                        <td><%=words[i].tv%></td>
+                        <td><button onclick="deleteVoca('<%=words[i]._id%>')">Xóa</button></td>
+                    </tr>
+                <%}%>
+            </table>
+        <%}%>
+       </ul>
+    </div>
+</main>
+<%- include('./footer.ejs') %>

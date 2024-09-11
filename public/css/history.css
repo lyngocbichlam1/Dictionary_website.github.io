@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 15.5em);
+    padding: 1em 15%;
+    display: grid;
+}
+
+.container p {
+    font-size: 1.2em;
+    height: 1.75em;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.container ul li {
+    padding: 0.5em;
+}
+
+.container ul li:hover {
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+
+main #box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #000000b5;
+}
+
+main img.img-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    cursor: pointer;
+}
+
+main .row {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    position: relative;
+    padding-left: 2em;
+}
+
+div#show p {
+    font-size: 18px;
+}
+
+div#show p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -1em;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 2em);
+    position: relative;
+}
+
+.container-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/* width */
+.container-child::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container-child::-webkit-scrollbar-track {
+    background-color: #cfcfcf;
+  }
+
+/* Handle */
+.container-child::-webkit-scrollbar-thumb {
+    background: #575763;
+}
+
+/* Handle on hover */
+.container-child::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}

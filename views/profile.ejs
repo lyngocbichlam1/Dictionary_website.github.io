@@ -1,0 +1,15 @@
+<%- include('./header.ejs') %>
+    <main>
+        <div class="container">
+            <img src="<%=user.photo%>" alt="" class="img-avata">
+            <div class="info">
+                <h3>
+                    <%=user.name%>
+                </h3>
+                <p>Email: <%=user.email%>
+                </p>
+                <a id="logout" href="/logout">Đăng xuất</a>
+            </div>
+        </div>
+    </main>
+    <%- include('./footer.ejs') %>

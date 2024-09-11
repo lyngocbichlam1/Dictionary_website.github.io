@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+main {
+    min-height: calc(100vh - 15.5em - 2px);
+    padding: 1em 15%;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: #ffffff9e;
+    position: relative;
+    overflow: hidden;
+}
+
+.form {
+    display: block;
+}
+
+.form label {
+    background-color: #5454ff;
+    color: white;
+    padding: 0.3em 1em;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form input[type="text"] {
+    display: block;
+    margin: 0.5em 0;
+    font-size: 1em;
+    background-color: white;
+    padding: 0.4em 1em;
+    outline: none;
+    border: 1px solid #424242;
+    border-radius: 3px;
+}
+
+.form button#check,
+.form button#save-word {
+    font-size: 1em;
+    padding: 0.3em 1.5em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form button#save-word {
+    display: none;
+    margin-left: 1em;
+    background-color: #5858ff;
+    color: white;
+    border: 1px solid #5858ff;
+}
+
+.form div#result {
+    margin-top: 1em;
+    padding-left: 2em;
+}
+
+.form div#result p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.form div#result p:first-child {
+    font-size: 18px;
+    margin-left: -1em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+main .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    transition: all 0.4s;
+    background-color: white;
+}
+
+main .box.\.box-show-form-save {
+    left: 0;
+}
+
+main .form-save {
+    position: relative;
+}
+
+main .form-save input {
+    display: block;
+    font-size: 1em;
+    outline: none;
+    padding: 0.3em 0.5em;
+    border: 1px solid #4c4c4c;
+    margin-top: 3px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+main button#save {
+    padding: 0.3em 2em;
+    font-size: 1em;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main .form-save h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+main img#img-icon-back {
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+img#icon-play {
+    height: 2.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 0.5em;
+    display: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
